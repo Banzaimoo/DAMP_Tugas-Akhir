@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>mulyo pahat Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"
+    >
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+    .font-lora{
+        font-family: 'Lora', 'sans-serif';
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[url('/img/sand-texture.png')] bg-cover bg-center bg-no-repeat">
+  <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-4">
+    <div class="font-playfair font-semibold text-4xl text-[#E6D7C3] select-none">mulyo pahat</div>
+    <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
+      <li class="flex items-center space-x-2 cursor-pointer">
+        <i class="fas fa-bars"></i>
+        <span>Products</span>
+      </li>
+      <li class="cursor-pointer">Sales</li>
+      <li class="cursor-pointer">About Us</li>
+    </ul>
+    <form class="relative">
+      <input
+        type="text"
+        placeholder="Search Bar"
+        class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
+      />
+      <button
+        type="button"
+        class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
+        aria-label="Clear search"
+      >
+        ×
+      </button>
+    </form>
+  </nav>
+
+  <main class="flex justify-center items-center min-h-[calc(100vh-64px)] px-4">
+    <form
+      class="bg-[#F7F0E9] bg-opacity-90 rounded-xl max-w-md w-full p-8 text-[#3B2616] select-none"
+      autocomplete="off"
+    >
+      <h1 class="font-playfair text-5xl font-bold mb-6 text-center">mulyo pahat</h1>
+      <h2 class="text-xl font-semibold mb-2 text-center font-lora">create an account</h2>
+
+      <label class="block mb-3 text-sm" for="fullname">fullname</label>
+      <input
+        id="fullname"
+        name="fullname"
+        type="text"
+        class="w-full rounded-md border border-[#3B2616] px-3 py-2 mb-4 text-[#3B2616] text-sm focus:outline-none"
+      />
+
+      <label class="block mb-3 text-sm" for="email">email</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        class="w-full rounded-md border border-[#3B2616] px-3 py-2 mb-4 text-[#3B2616] text-sm focus:outline-none"
+      />
+
+      <label class="block mb-3 text-sm" for="password">password</label>
+      <input
+        id="password"
+        name="password"
+        type="password"
+        class="w-full rounded-md border border-[#3B2616] px-3 py-2 mb-4 text-[#3B2616] text-sm focus:outline-none"
+      />
+
+      <label class="block mb-3 text-sm" for="confirm-password">confirm password</label>
+      <input
+        id="confirm-password"
+        name="confirm-password"
+        type="password"
+        class="w-full rounded-md border border-[#3B2616] px-3 py-2 mb-4 text-[#3B2616] text-sm focus:outline-none"
+      />
+
+      <label class="inline-flex items-center mb-6 text-sm cursor-pointer">
+        <input type="checkbox" class="form-checkbox text-[#3B2616] mr-2" />
+        I agree to the Terms of Service
+      </label>
+
+      <button
+        type="submit"
+        class="w-full bg-[#3B2616] text-[#F7F0E9] font-playfair font-bold text-xl rounded-lg py-3 mb-6 hover:bg-[#2e1f11] transition-colors"
+      >
+        register
+      </button>
+
+      <p class="text-center text-xs mb-1">already have an account?</p>
+      <p class="text-center text-xs mb-3">or register using</p>
+
+      <div class="flex justify-center space-x-6 text-2xl">
+        <i class="fab fa-google cursor-pointer" aria-label="Register with Google"></i>
+        <i class="fab fa-meta cursor-pointer" aria-label="Register with Meta"></i>
+        <i class="fab fa-apple cursor-pointer" aria-label="Register with Apple"></i>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

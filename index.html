@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+    mulyo pahat
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"
+    >
+    <style>
+        body {
+        font-family: 'Poppins', sans-serif;
+        }
+        .font-playfair {
+        font-family: 'Playfair Display', serif;
+        }
+        .font-lora{
+            font-family: 'Lora', 'sans-serif';
+        }
+        .product-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 1.5rem; /* rounded-3xl */
+        }
+        .product-card img {
+            transition: filter 0.3s ease;
+            display: block;
+            border-radius: 1.5rem;
+        }
+        .product-info {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 1.125rem; /* text-lg */
+            font-weight: 500;
+            font-family: 'Playfair Display', serif;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 1.5rem;
+        }
+        .product-card:hover img {
+            filter: brightness(40%);
+        }
+        .product-card:hover .product-info {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-[#3c2613]">
+  <!-- Navbar -->
+  <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-4">
+    <div class="font-playfair font-semibold text-4xl text-[#E6D7C3] select-none">mulyo pahat</div>
+    <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
+        <li class="flex items-center space-x-2 cursor-pointer">
+            <i class="fas fa-bars"></i>
+            <span>Products</span>
+        </li>
+        <li class="cursor-pointer">Sales</li>
+        <li class="cursor-pointer">About Us</li>
+    </ul>
+    <form class="relative">
+        <input
+            type="text"
+            placeholder="Search Bar"
+            class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
+        />
+        <button
+            type="button"
+            class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
+            aria-label="Clear search"
+        >
+        ×
+        </button>
+    </form>
+  </nav>
+
+  <!-- Hero Section -->
+    <div class="flex flex-wrap md:flex-nowrap">
+        <div class="relative w-full md:w-2/5">
+        <img alt="Close-up texture of tree bark with dark brown color" class="w-full h-full object-cover" height="400" src="/img/wood-bark.jpg" width="600"/>
+        <div class="absolute inset-0 flex items-center justify-center text-white text-7xl font-playfair font-semibold leading-tight select-none" style="line-height: 1.1">
+            <div class="text-white">
+            mulyo<br/>pahat
+            </div>
+        </div>
+    </div>
+    <div class="w-full md:w-3/5">
+        <img alt="Wooden furniture in a living room with wooden floor and brick wall background" class="w-full h-full object-cover" height="400" src="/img/furniture-usage.png" width="900"/>
+    </div>
+  </div>
+
+  <!-- Category Menu -->
+  <div class="bg-[url('/img/sand-texture.png')] bg-cover bg-center py-6 px-6">
+   <ul class="max-w-7xl mx-auto bg-[#d9c9b1] rounded-lg flex justify-between text-[#3c2613] text-lg font-serif px-6 py-2 select-none" style="min-width: 320px">
+    <li class="cursor-pointer px-4 py-1 rounded-md hover:underline">
+     Chairs
+    </li>
+    <li class="cursor-pointer px-4 py-1 rounded-md hover:underline">
+     Shelfes
+    </li>
+    <li class="cursor-pointer px-4 py-1 rounded-md hover:underline">
+     Tables
+    </li>
+    <li class="cursor-pointer px-4 py-1 rounded-md hover:underline">
+     Cabinet
+    </li>
+    <li class="cursor-pointer px-4 py-1 rounded-md hover:underline">
+     Bed
+    </li>
+    <li class="cursor-pointer px-4 py-1 rounded-md hover:underline">
+     Wardrobe
+    </li>
+    <li class="cursor-pointer px-4 py-1 rounded-md underline">
+     Night Stand
+    </li>
+   </ul>
+
+   <!-- Product Grid -->
+   <div class="max-w-7xl mx-auto mt-8 grid grid-cols-2 sm:grid-cols-4 gap-8 px-4">
+        <div class="product-card bg-[#d9d9d9] p-0">
+            <img alt="Wooden night stand with books and tea set on top, light wood color, rounded corners" class="object-contain" height="300" src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" width="300"/>
+            <div class="product-info">
+                <div>Night Stand</div>
+                <div class="mt-1 text-lg font-semibold">$120</div>
+            </div>
+        </div>
+        <div class="product-card bg-[#d9d9d9] p-0">
+            <img alt="Wooden night stand with books and tea set on top, light wood color, rounded corners" class="object-contain" height="300" src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" width="300"/>
+            <div class="product-info">
+                <div>Night Stand</div>
+                <div class="mt-1 text-lg font-semibold">$120</div>
+            </div>
+        </div>
+        <div class="product-card bg-[#d9d9d9] p-0">
+            <img alt="Wooden night stand with books and tea set on top, light wood color, rounded corners" class="object-contain" height="300" src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" width="300"/>
+            <div class="product-info">
+                <div>Night Stand</div>
+                <div class="mt-1 text-lg font-semibold">$120</div>
+            </div>
+        </div>
+        <div class="product-card bg-[#d9d9d9] p-0">
+            <img alt="Wooden night stand with books and tea set on top, light wood color, rounded corners" class="object-contain" height="300" src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" width="300"/>
+            <div class="product-info">
+                <div>Night Stand</div>
+                <div class="mt-1 text-lg font-semibold">$120</div>
+            </div>
+        </div>
+   </div>
+  </div>
+ </body>
+</html>
