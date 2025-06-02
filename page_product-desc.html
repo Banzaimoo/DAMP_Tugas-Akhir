@@ -1,329 +1,235 @@
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
+<head>
+   <meta charset="utf-8"/>
+   <meta content="width=device-width, initial-scale=1" name="viewport"/>
+   <title>
    Rafi's Night Stand - acacia
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Georgia&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-      font-family: Georgia, serif;
-    }
-  </style>
- </head>
- <body class="bg-[url('img/sand-texture.png')] bg-cover bg-center min-h-screen text-[#3c2a1f]">
-  <header class="bg-[#3c2a1f] text-[#d9c6b0] flex items-center justify-between px-6 py-4">
-   <div class="text-2xl font-semibold select-none">
-    mulyo pahat.
-   </div>
-   <nav class="flex items-center space-x-8 text-sm">
-    <a class="flex items-center gap-2 hover:underline" href="#">
-     <i class="fas fa-bars">
-     </i>
-     Products
-    </a>
-    <a class="hover:underline" href="#">
-     Chat
-    </a>
-    <a class="hover:underline" href="#">
-     About Us
-    </a>
-   </nav>
-   <div class="flex items-center space-x-4">
-    <i class="fas fa-shopping-cart text-lg">
-    </i>
-    <div class="relative">
-     <input class="rounded-full text-xs text-[#3c2a1f] placeholder:text-[#3c2a1f] px-3 py-1 w-32" placeholder="Search Bar" type="text"/>
-     <button aria-label="Clear search" class="absolute right-1 top-1/2 -translate-y-1/2 text-[#3c2a1f] hover:text-[#6b4f3a]">
-      <i class="fas fa-times">
-      </i>
-     </button>
-    </div>
-    <button aria-label="User account" class="w-7 h-7 rounded-full border border-[#d9c6b0] flex items-center justify-center text-[#d9c6b0]">
-     <i class="fas fa-user">
-     </i>
-    </button>
-   </div>
-  </header>
-  <main class="max-w-7xl mx-auto mt-8 mb-16 bg-[#d9c6b0cc] rounded-lg p-6 md:p-10">
+   </title>
+   <script src="https://cdn.tailwindcss.com">
+   </script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+   <link href="https://fonts.googleapis.com/css2?family=Georgia&amp;display=swap" rel="stylesheet"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <style>
+      body {
+         font-family: 'Poppins', sans-serif;
+      }
+      .font-playfair {
+         font-family: 'Playfair Display', serif;
+      }
+      .font-lora{
+         font-family: 'Lora', 'sans-serif';
+      }
+   </style>
+</head>
+<body class="bg-[url('img/sand-texture.png')] bg-cover bg-center min-h-screen text-[#3c2a1f]">
+   <!-- NAVBAR -->
+   <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
+    <div class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">mulyo pahat</div>
+    <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
+        <li class="flex items-center space-x-2 cursor-pointer">
+            <i class="fas fa-bars"></i>
+            <span class="text-base">Products</span>
+        </li>
+        <li class="cursor-pointer text-base">Sales</li>
+        <li class="cursor-pointer text-base">About Us</li>
+    </ul>
+    <form class="relative">
+        <input
+            type="text"
+            placeholder="Search Bar"
+            class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
+        />
+        <button
+            type="button"
+            class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
+            aria-label="Clear search"
+        >
+        ×
+        </button>
+    </form>
+  </nav>
+
+
+   <main class="max-w-7xl mx-auto mt-8 mb-16 bg-[#d9c6b0cc] rounded-lg p-6 md:p-10">
    <section class="flex flex-col md:flex-row md:space-x-10">
-    <div>
-     <img alt="Wooden night stand with a tea set on top and books on the lower shelf, photographed in a studio with a neutral background" class="rounded-md shadow-md w-72 h-72 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/c56e5d0f-fc5d-40c8-899b-bee2753e9721.jpg" width="300"/>
-     <div class="flex space-x-2 mt-3">
-      <img alt="Thumbnail image of wooden night stand variant 1" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/5fdaa7ef-42f7-4d79-b3bb-b0aeab148d3c.jpg" width="48"/>
-      <img alt="Thumbnail image of wooden night stand variant 2" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/1281c67c-ca5b-4245-0244-f95e9f2d946b.jpg" width="48"/>
-      <img alt="Thumbnail image of wooden night stand variant 3" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/2b7d94fe-7d89-40a0-4f52-f17a4341d2e1.jpg" width="48"/>
-      <img alt="Thumbnail image of wooden night stand variant 4" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/7748c382-5c61-48b2-e0ee-630cc6a9e243.jpg" width="48"/>
-      <img alt="Thumbnail image of wooden night stand variant 5" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/6f0245b3-ef98-41ff-de5e-9aed765106ff.jpg" width="48"/>
-      <button aria-label="More images" class="flex items-center justify-center w-8 h-8 rounded-full border border-[#3c2a1f] text-[#3c2a1f]">
-       <i class="fas fa-chevron-right text-xs">
-       </i>
-      </button>
-     </div>
-    </div>
-    <div class="flex-1 mt-6 md:mt-0">
-     <div class="flex justify-between items-start">
       <div>
-       <h1 class="text-lg font-semibold">
-        Rafi’s Night Stand - acacia
-       </h1>
-       <p class="text-xs mt-1">
-        size: 42 x 38 x 50
-       </p>
+         <img alt="Wooden night stand with a tea set on top and books on the lower shelf, photographed in a studio with a neutral background" class="rounded-md shadow-md w-72 h-72 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/c56e5d0f-fc5d-40c8-899b-bee2753e9721.jpg" width="300"/>
+         <div class="flex space-x-2 mt-3">
+            <img alt="Thumbnail image of wooden night stand variant 1" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/5fdaa7ef-42f7-4d79-b3bb-b0aeab148d3c.jpg" width="48"/>
+            <img alt="Thumbnail image of wooden night stand variant 2" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/1281c67c-ca5b-4245-0244-f95e9f2d946b.jpg" width="48"/>
+            <img alt="Thumbnail image of wooden night stand variant 3" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/2b7d94fe-7d89-40a0-4f52-f17a4341d2e1.jpg" width="48"/>
+            <img alt="Thumbnail image of wooden night stand variant 4" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/7748c382-5c61-48b2-e0ee-630cc6a9e243.jpg" width="48"/>
+            <img alt="Thumbnail image of wooden night stand variant 5" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/6f0245b3-ef98-41ff-de5e-9aed765106ff.jpg" width="48"/>
+            <button aria-label="More images" class="flex items-center justify-center w-8 h-8 rounded-full border border-[#3c2a1f] text-[#3c2a1f]">
+               <i class="fas fa-chevron-right text-xs"></i>
+            </button>
+         </div>
       </div>
-      <div class="text-lg font-semibold">
-       Rp 350.000
+      <div class="flex-1 mt-6 md:mt-0">
+         <div class="flex justify-between items-start">
+            <div>
+               <h1 class="text-lg font-semibold font-lora">Rafi’s Night Stand - acacia</h1>
+               <p class="text-xs mt-0 font-lora">size: 42 x 38 x 50</p>
+            </div>
+            <div class="display items-center space-x-6 mt-6 max-w-md">
+               <div class="text-lg font-semibold font-lora">
+                  Rp 350.000
+               </div>
+               <div class="flex items-center space-x-3">
+                  <button aria-label="Decrease quantity" class="w-8 h-8 rounded-full border border-[#3c2a1f] flex items-center justify-center text-lg font-bold">−</button>
+                  <span class="text-lg font-semibold select-none">1</span>
+                  <button aria-label="Increase quantity" class="w-8 h-8 rounded-full border border-[#3c2a1f] flex items-center justify-center text-lg font-bold">+</button>
+               </div>
+               <button class="bg-[#3c2a1f] text-[#d9c6b0] rounded-full px-8 py-2 text-sm font-normal">   Add to cart</button>
+            </div>
+         </div>
+         <div class="mt-[5rem] max-w-md">
+         <p class="text-xs font-semibold mb-1">
+            variant
+         </p>
+         <div class="flex flex-wrap gap-2 text-xs font-semibold font-lora">
+            <button aria-pressed="true" class="bg-white text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">acacia</button>
+            <button aria-pressed="false" class="bg-[#b9a68a] text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">dark oak</button>
+            <button aria-pressed="false" class="bg-[#b9a68a] text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">oak</button>
+            <button aria-pressed="false" class="bg-[#b9a68a] text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">spruce</button>
+            <button aria-pressed="false" class="bg-[#b9a68a] text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">birch</button>
+            <button aria-pressed="false" class="bg-[#b9a68a] text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">sakura</button>
+         </div>
+         </div>
       </div>
-     </div>
-     <div class="mt-6 max-w-md">
-      <p class="text-xs font-semibold mb-1">
-       variant
-      </p>
-      <div class="flex flex-wrap gap-2 text-xs font-semibold">
-       <button aria-pressed="true" class="bg-white text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">
-        acacia
-       </button>
-       <button aria-pressed="false" class="bg-[#b9a68a] text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">
-        dark oak
-       </button>
-       <button aria-pressed="false" class="bg-[#b9a68a] text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">
-        oak
-       </button>
-       <button aria-pressed="false" class="bg-[#b9a68a] text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">
-        spruce
-       </button>
-       <button aria-pressed="false" class="bg-[#b9a68a] text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">
-        birch
-       </button>
-       <button aria-pressed="false" class="bg-[#b9a68a] text-[#3c2a1f] rounded-md px-3 py-1 cursor-pointer">
-        sakura
-       </button>
-      </div>
-     </div>
-     <div class="flex items-center space-x-6 mt-6 max-w-md">
-      <div class="flex items-center space-x-3">
-       <button aria-label="Decrease quantity" class="w-8 h-8 rounded-full border border-[#3c2a1f] flex items-center justify-center text-lg font-bold">
-        −
-       </button>
-       <span class="text-lg font-semibold select-none">
-        1
-       </span>
-       <button aria-label="Increase quantity" class="w-8 h-8 rounded-full border border-[#3c2a1f] flex items-center justify-center text-lg font-bold">
-        +
-       </button>
-      </div>
-      <button class="bg-[#3c2a1f] text-[#d9c6b0] rounded-full px-8 py-2 text-sm font-normal">
-       Add to cart
-      </button>
-     </div>
-    </div>
    </section>
    <section class="mt-10 max-w-4xl text-xs leading-tight">
-    <h2 class="font-semibold text-base mb-2">
-     Description
-    </h2>
-    <p class="mb-4">
-     Rafi's Night Stand is a sleek and thoughtfully designed piece that
-        embodies the essence of modern minimalism. Crafted from solid wood
-        with clean, uninterrupted lines, its natural finish brings warmth to
-        the room without overwhelming the space. The silhouette is enhanced
-        with subtle accents of Madura steel, giving it a refined, understated
-        edge.
-    </p>
-    <p>
-     Designed to blend seamlessly into contemporary bedrooms, the night
-        stand features a single soft-close drawer and a minimalist open
-        shelf—perfect for keeping nighttime essentials neatly organized. With
-        its balanced proportions and clean aesthetic, Rafi's Night Stand is the
-        ideal complement for modern living.
-    </p>
+      <h2 class="font-semibold text-base mb-2">Description</h2>
+      <p class="mb-4">Rafi's Night Stand is a sleek and thoughtfully designed piece that embodies the essence of modern minimalism. Crafted from solid wood with clean, uninterrupted lines, its natural finish brings warmth to the room without overwhelming the space. The silhouette is enhanced with subtle accents of Madura steel, giving it a refined, understated edge.</p>
+      <p> Designed to blend seamlessly into contemporary bedrooms, the night stand features a single soft-close drawer and a minimalist open shelf—perfect for keeping nighttime essentials neatly organized. With its balanced proportions and clean aesthetic, Rafi's Night Stand is the ideal complement for modern living. </p>
    </section>
    <section class="mt-8 max-w-4xl text-xs leading-tight">
-    <h2 class="font-semibold text-base mb-2">
-     Specification
-    </h2>
-    <p>
-     Name: Rafi's Night Stand
-    </p>
-    <p>
-     Design Style: Modern Minimalist
-    </p>
-    <p>
-     Primary Materials:
-    </p>
-    <ul class="list-disc list-inside ml-4 mb-1">
-     <li>
-      Wood: Solid hardwood (Ash or Oak), smooth matte finish
-     </li>
-     <li>
-      Frame &amp; Accents: Slim-profile Madura steel (powder-coated, matte black)
-     </li>
-    </ul>
-    <p>
-     Dimensions:
-    </p>
-    <ul class="list-disc list-inside ml-4 mb-1">
-     <li>
-      Height: 50 cm
-     </li>
-     <li>
-      Width: 42 cm
-     </li>
-     <li>
-      Depth: 38 cm
-     </li>
-    </ul>
-    <p>
-     Weight: 5 kg
-    </p>
-    <p>
-     Features:
-    </p>
-    <ul class="list-disc list-inside ml-4">
-     <li>
-      1 soft-close drawer with hidden handle groove
-     </li>
-     <li>
-      1 open lower shelf for books, devices, or décor
-     </li>
-     <li>
-      Flush, handle-free design for a seamless look
-     </li>
-     <li>
-      Lightweight yet sturdy structure
-     </li>
-     <li>
-      Anti-slip base pads for floor protection
-     </li>
-    </ul>
+      <h2 class="font-semibold text-base mb-2">Specification</h2>
+      <p>Name: Rafi's Night Stand</p>
+      <p>Design Style: Modern Minimalist</p>
+      <p>Primary Materials:</p>
+      <ul class="list-disc list-inside ml-4 mb-1">
+         <li>Wood: Solid hardwood (Ash or Oak), smooth matte finish</li>
+         <li>Frame &amp; Accents: Slim-profile Madura steel (powder-coated, matte black)</li>
+      </ul>
+      <p>Dimensions:</p>
+      <ul class="list-disc list-inside ml-4 mb-1">
+         <li>Height: 50 cm</li>
+         <li>Width: 42 cm</li>
+         <li>Depth: 38 cm</li>
+      </ul>
+      <p>Weight: 5 kg</p>
+      <p>Features:</p>
+      <ul class="list-disc list-inside ml-4">
+         <li>1 soft-close drawer with hidden handle groove</li>
+         <li>1 open lower shelf for books, devices, or décor</li>
+         <li>Flush, handle-free design for a seamless look</li>
+         <li>Lightweight yet sturdy structure</li>
+         <li>Anti-slip base pads for floor protection</li>
+      </ul>
    </section>
    <section class="mt-8 max-w-4xl text-xs flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-4 sm:space-y-0">
-    <div class="flex items-center space-x-3">
-     <i class="fas fa-truck text-xl">
-     </i>
-     <div>
+      <div class="flex items-center space-x-3">
+      <i class="fas fa-truck text-xl">
+      </i>
+      <div>
       <p>
-       delivevery from
-       <strong>
-        Madura
-       </strong>
+         delivevery from
+         <strong>
+         Madura
+         </strong>
       </p>
       <p class="text-[9px] -mt-1">
-       estimate arrival at 2 June - 5 June
+         estimate arrival at 2 June - 5 June
       </p>
-     </div>
-    </div>
-    <div class="flex items-center space-x-3">
-     <i class="fas fa-box-open text-xl">
-     </i>
-     <div>
+      </div>
+      </div>
+      <div class="flex items-center space-x-3">
+      <i class="fas fa-box-open text-xl">
+      </i>
+      <div>
       <p>
-       marketed by
-       <strong>
-        Kayu Jaya Abadi
-       </strong>
+         marketed by
+         <strong>
+         Kayu Jaya Abadi
+         </strong>
       </p>
       <p class="text-[9px] -mt-1">
-       Madura, East java
+         Madura, East java
       </p>
       <p class="flex items-center gap-1 -mt-1">
-       <i class="far fa-star">
-       </i>
-       4.8 / 5
+         <i class="far fa-star">
+         </i>
+         4.8 / 5
       </p>
-     </div>
-    </div>
-    <div class="flex space-x-3">
-     <button class="bg-[#3c2a1f] text-[#d9c6b0] rounded-full px-4 py-1 text-xs font-normal">
+      </div>
+      </div>
+      <div class="flex space-x-3">
+      <button class="bg-[#3c2a1f] text-[#d9c6b0] rounded-full px-4 py-1 text-xs font-normal">
       visit artisan
-     </button>
-     <button class="bg-[#3c2a1f] text-[#d9c6b0] rounded-full px-4 py-1 text-xs font-normal">
+      </button>
+      <button class="bg-[#3c2a1f] text-[#d9c6b0] rounded-full px-4 py-1 text-xs font-normal">
       message
-     </button>
-    </div>
+      </button>
+      </div>
    </section>
-  </main>
-  <footer class="bg-[#3c2a1f] text-[#d9c6b0] py-12 px-6">
-   <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8">
-    <div class="text-4xl font-bold leading-tight select-none">
-     mulyo
-     <br/>
-     pahat.
-    </div>
-    <div>
-     <h3 class="font-semibold text-lg mb-4">
-      company
-     </h3>
-     <ul class="space-y-2 text-sm">
-      <li>
-       <a class="hover:underline" href="#">
-        FAQ
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        BLOG
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        CONTROLS
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        ABOUT US
-       </a>
-      </li>
-     </ul>
-    </div>
-    <div>
-     <h3 class="font-semibold text-lg mb-4">
-      customer service
-     </h3>
-     <ul class="space-y-2 text-sm">
-      <li>
-       <a class="hover:underline" href="#">
-        CONTACT US
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        STORE LOCATOR
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        REDEEM REWARDS
-       </a>
-      </li>
-     </ul>
-    </div>
-    <div>
-     <h3 class="font-semibold text-lg mb-4">
-      account
-     </h3>
-     <ul class="space-y-2 text-sm">
-      <li>
-       <a class="hover:underline" href="#">
-        MY ACCOUNT
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        ORDERS
-       </a>
-      </li>
-     </ul>
-    </div>
-   </div>
-   <div class="mt-10 text-center text-xs font-extrabold tracking-widest">
-    COPYRIGHT © MULYOPAHAT.COM 2025
-   </div>
-  </footer>
- </body>
+   </main>
+
+   <!-- FOOTER -->
+   <footer class="bg-[#3c2a1f] text-[#d9c6b0] py-5 px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8 mt-[2rem]">
+         <div class="text-6xl font-semibold leading-tight select-none font-playfair">
+            mulyo pahat.
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">company</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">FAQ</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">BLOG</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">CONTROLS</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">ABOUT US</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">customer service</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">CONTACT US</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">STORE LOCATOR</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">REDEEM REWARDS</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">account</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">MY ACCOUNT</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">ORDERS</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-[5rem] text-center text-xs font-extrabold tracking-widest">
+         COPYRIGHT © MULYOPAHAT.COM 2025
+      </div>
+   </footer>
+</body>
 </html>
