@@ -4,45 +4,70 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>mulyo pahat</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-    .font-playfair { font-family: 'Playfair Display', serif; }
-  </style>
+  <script src="https://cdn.tailwindcss.com">
+   </script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+   <link href="https://fonts.googleapis.com/css2?family=Georgia&amp;display=swap" rel="stylesheet"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <style>
+      body {
+         font-family: 'Poppins', sans-serif;
+      }
+      .font-playfair {
+         font-family: 'Playfair Display', serif;
+      }
+      .font-lora{
+         font-family: 'Lora', 'sans-serif';
+      }
+   </style>
 </head>
 <body class="bg-[#f5f3f0] text-[#3c2613]">
 
-  <!-- Navbar -->
-  <nav class="bg-[#3B2616] text-[#E6D7C3] px-8 py-4 flex justify-between items-center">
-    <div class="text-3xl font-playfair font-semibold">mulyo pahat.</div>
-    <div class="flex gap-12 items-center">
-      <a href="#" class="hover:underline">Products</a>
-      <a href="#" class="hover:underline">Chat</a>
-      <a href="#" class="hover:underline">About Us</a>
-    </div>
+  <!-- NAVBAR -->
+   <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
+    <div class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">mulyo pahat</div>
+    <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
+        <li class="flex items-center space-x-2 cursor-pointer">
+            <i class="fas fa-bars"></i>
+            <span class="text-base">Products</span>
+        </li>
+        <li class="cursor-pointer text-base">Sales</li>
+        <li class="cursor-pointer text-base">About Us</li>
+    </ul>
     <form class="relative">
-      <input type="text" placeholder="Search Bar" class="rounded-full px-4 py-2 text-sm text-[#3B2616] w-48"/>
-      <button type="reset" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#3B2616]">×</button>
+        <input
+            type="text"
+            placeholder="Search Bar"
+            class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
+        />
+        <button
+            type="button"
+            class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
+            aria-label="Clear search"
+        >
+        ×
+        </button>
     </form>
   </nav>
 
   <!-- Hero -->
-  <section class="flex flex-col md:flex-row w-full">
-    <div class="relative md:w-1/2">
+  <section class="flex flex-col md:flex-row w-full h-[30rem]">
+    <div class="relative md:w-2/5">
       <img src="./img/wood-bark.jpg" alt="Wood texture" class="h-full w-full object-cover"/>
-      <div class="absolute inset-0 flex items-center justify-center text-white text-6xl font-playfair font-bold text-center">
+      <div class="absolute inset-0 flex items-center justify-center text-white text-6xl font-playfair font-semibold text-center">
         <div>mulyo<br>pahat.</div>
       </div>
     </div>
-    <div class="md:w-1/2">
+    <div class="md:w-3/5">
       <img src="./img/furniture-usage.png" alt="Furniture usage" class="h-full w-full object-cover"/>
     </div>
   </section>
 
 <!-- Best Seller -->
 <section class="bg-[url('./img/sand-texture.png')] bg-cover py-12">
-  <div class="text-center text-2xl font-playfair mb-8">our best seller</div>
+  <div class="text-center text-2xl font-lora mb-8 font-medium">our best seller</div>
   <div class="flex justify-center gap-6 flex-wrap px-4">
     
     <!-- Card -->
@@ -87,7 +112,7 @@
 
   <!-- Trusted Workshop -->
   <section class="py-12 px-6 bg-[#eee3d3] text-center">
-    <div class="text-2xl font-playfair mb-8">our trusted workshop</div>
+    <div class="text-2xl font-lora mb-8 font-medium">our trusted workshop</div>
     <div class="flex justify-center gap-8 flex-wrap">
       <img src="https://media.discordapp.net/attachments/1290316555002839100/1379117281304641577/image_5.png?ex=683f128e&is=683dc10e&hm=3819282c9c19c9c55258b12e27bd93b2974542b5c7257558fd20332c5fbb3b72&=&format=webp&quality=lossless&width=555&height=555" alt="Wotwood" class="h-40"/>
       <img src="https://media.discordapp.net/attachments/1290316555002839100/1379117281698775040/image_6.png?ex=683f128e&is=683dc10e&hm=ec0e794ff34c453092d7156eda92b1aa6929c40da57a9afa253cedf7461cee7d&=&format=webp&quality=lossless&width=555&height=555" alt="Global" class="h-40"/>
@@ -104,7 +129,7 @@
   <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8">
     
     <div class="px-0">
-      <h2 class="text-3xl font-playfair text-[#3c2613] mb-4">about us</h2>
+      <h2 class="text-3xl font-lora text-[#3c2613] mb-4 font-medium">about us</h2>
       <p class="text-[#3c2613] text-base leading-relaxed">
         Mulyo Pahat has flourished with a singular mission: to create furniture that lasts.
         We take pride in merging traditional craftsmanship with contemporary designs.
@@ -130,39 +155,58 @@
 
 
 
-  <!-- Footer -->
-  <footer class="bg-[#3B2616] text-[#E6D7C3] px-8 py-12">
-    <div class="flex flex-col md:flex-row justify-between gap-8 text-sm">
-      <div>
-        <div class="text-2xl font-playfair mb-4">mulyo pahat.</div>
+  <footer class="bg-[#3c2a1f] text-[#d9c6b0] py-5 px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8 mt-[2rem]">
+         <div class="text-6xl font-semibold leading-tight select-none font-playfair">
+            mulyo pahat.
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">company</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">FAQ</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">BLOG</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">CONTROLS</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">ABOUT US</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">customer service</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">CONTACT US</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">STORE LOCATOR</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">REDEEM REWARDS</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">account</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">MY ACCOUNT</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">ORDERS</a>
+               </li>
+            </ul>
+         </div>
       </div>
-      <div>
-        <div class="font-bold mb-2">company</div>
-        <ul>
-          <li>FAQ</li>
-          <li>Blog</li>
-          <li>Careers</li>
-          <li>About Us</li>
-        </ul>
+      <div class="mt-[5rem] text-center text-xs font-extrabold tracking-widest">
+         COPYRIGHT © MULYOPAHAT.COM 2025
       </div>
-      <div>
-        <div class="font-bold mb-2">customer service</div>
-        <ul>
-          <li>Contact Us</li>
-          <li>Store Locator</li>
-          <li>Return & Refunds</li>
-        </ul>
-      </div>
-      <div>
-        <div class="font-bold mb-2">account</div>
-        <ul>
-          <li>My Account</li>
-          <li>Orders</li>
-        </ul>
-      </div>
-    </div>
-    <div class="text-center text-xs mt-8">&copy; 2025 mulyopahat.com</div>
-  </footer>
+   </footer>
 
 </body>
 </html>
