@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>mulyo pahat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+    .font-lora{
+        font-family: 'Lora', 'sans-serif';
+    }
+  </style>
+</head>
+
+<body class="bg-[url('./img/sand-texture.png')] text-[#3c2613]">
+    
+
+  <!-- NAVBAR -->
+   <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
+    <div class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">mulyo pahat</div>
+    <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
+        <li class="flex items-center space-x-2 cursor-pointer">
+            <i class="fas fa-bars"></i>
+            <span class="text-base">Products</span>
+        </li>
+        <li class="cursor-pointer text-base">Sales</li>
+        <li class="cursor-pointer text-base">About Us</li>
+    </ul>
+    <form class="relative">
+        <input
+            type="text"
+            placeholder="Search Bar"
+            class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
+        />
+        <button
+            type="button"
+            class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
+            aria-label="Clear search"
+        >
+        ×
+        </button>
+    </form>
+  </nav>
+  
+    <!-- Wrapper untuk memusatkan -->
+  <div class="min-h-screen flex items-center justify-center h-[1000px]">
+    <div class="items-center justify-center bg-white/80 w-[1000px] h-[700px] rounded-lg shadow-lg flex overflow-hidden">
+    <div class="bg-white/80 w-[900px] h-[600px] rounded-lg shadow-lg flex overflow-hidden">
+      
+      <!-- Inbox Sidebar -->
+      <aside class="w-[30%] bg-[#f3e8d3] border-r border-gray-300 flex flex-col">
+        <div class="p-4 border-b border-gray-300">
+          <h2 class="font-bold text-xl mb-2">Inbox</h2>
+          <div class="relative">
+            <input type="text" placeholder="Search here..." class="w-full px-3 py-2 rounded border text-sm focus:outline-none">
+            <span class="absolute right-3 top-2.5 text-gray-500">🔍</span>
+          </div>
+        </div>
+        <ul class="flex-1 overflow-y-auto p-2 space-y-1 text-sm">
+          <li class="bg-white rounded p-2 hover:bg-gray-200 cursor-pointer">Mulyo Pahat Support <span class="float-right text-xs">12/01/2025</span></li>
+          <li class="bg-white rounded p-2 hover:bg-gray-200 cursor-pointer font-bold">Kayu Jaya Abadi <span class="float-right text-xs">27/04/2025</span></li>
+          <li class="bg-white rounded p-2 hover:bg-gray-200 cursor-pointer">Sentra Kayu Nusantara <span class="float-right text-xs">14/05/2025</span></li>
+          <li class="bg-white rounded p-2 hover:bg-gray-200 cursor-pointer">Kayu Lestari <span class="float-right text-xs">31/01/2025</span></li>
+          <li class="bg-white rounded p-2 hover:bg-gray-200 cursor-pointer">Kayu Pahat Malang <span class="float-right text-xs">18/11/2025</span></li>
+        </ul>
+      </aside>
+
+      <!-- Chat Area -->
+      <main class="flex-1 bg-[#fdf6eb] flex flex-col">
+        <div class="p-4 border-b border-gray-300 flex items-center justify-between">
+          <div class="flex items-center gap-2 font-semibold">
+            <div class="bg-gray-500 text-white rounded-full w-8 h-8 flex items-center justify-center">🧑</div>
+            <span>Kayu Jaya Abadi</span>
+          </div>
+          <div class="flex gap-3 text-gray-600">
+            <button>📞</button>
+            <button>📹</button>
+          </div>
+        </div>
+
+        <div id="chatBox" class="flex-1 overflow-y-auto px-4 py-3 space-y-2 text-sm">
+          <div class="text-center text-gray-500 text-xs mb-2">27/04/2025</div>
+          <div class="flex gap-2">
+            <div class="bg-white px-3 py-2 rounded shadow">Halo, ada yang bisa saya bantu hari ini??</div>
+            <span class="self-end text-xs text-gray-400">09:23</span>
+          </div>
+          <div class="flex justify-end gap-2">
+            <span class="self-end text-xs text-gray-400">09:27</span>
+            <div class="bg-blue-100 px-3 py-2 rounded shadow">Bisa kak.</div>
+          </div>
+          <div class="flex gap-2">
+            <div class="bg-white px-3 py-2 rounded shadow">Untuk Rafi’s shelf bisa diubah ukurannya menjadi lebih kecil kak?</div>
+            <span class="self-end text-xs text-gray-400">09:28</span>
+          </div>
+          <div class="flex justify-end gap-2">
+            <span class="self-end text-xs text-gray-400">09:29</span>
+            <div class="bg-blue-100 px-3 py-2 rounded shadow">Baik kak saya mau yang seperti ini</div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-300 p-3 flex items-center gap-2">
+          <input id="msgInput" type="text" placeholder="Type your message..." class="flex-1 px-4 py-2 rounded border text-sm focus:outline-none"/>
+          <button id="emojiBtn">😊</button>
+          <button id="sendBtn" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+        </div>
+      </main>
+      </div>
+    </div>
+  </div>
+
+    <!-- FOOTER -->
+   <footer class="bg-[#3c2a1f] text-[#d9c6b0] py-5 px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8 mt-[2rem]">
+         <div class="text-6xl font-semibold leading-tight select-none font-playfair">
+            mulyo pahat.
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">company</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">FAQ</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">BLOG</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">CONTROLS</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">ABOUT US</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">customer service</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">CONTACT US</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">STORE LOCATOR</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">REDEEM REWARDS</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">account</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">MY ACCOUNT</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">ORDERS</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-[5rem] text-center text-xs font-extrabold tracking-widest">
+         COPYRIGHT © MULYOPAHAT.COM 2025
+      </div>
+   </footer>
+
+     <script>
+        const sendBtn = document.getElementById("sendBtn");
+        const msgInput = document.getElementById("msgInput");
+        const chatBox = document.getElementById("chatBox");
+
+        sendBtn.addEventListener("click", sendMessage);
+
+        function sendMessage() {
+        const msg = msgInput.value.trim();
+        if (msg === "") return;
+
+        const wrapper = document.createElement("div");
+        wrapper.className = "flex justify-end gap-2";
+        wrapper.innerHTML = `
+            <span class="self-end text-xs text-gray-400">${getTime()}</span>
+            <div class="bg-blue-100 px-3 py-2 rounded shadow">${msg}</div>
+        `;
+        chatBox.appendChild(wrapper);
+        chatBox.scrollTop = chatBox.scrollHeight;
+
+        msgInput.value = "";
+
+        // Simulated reply
+        setTimeout(() => {
+            const reply = document.createElement("div");
+            reply.className = "flex gap-2";
+            reply.innerHTML = `
+            <div class="bg-white px-3 py-2 rounded shadow">Terima kasih, kami akan proses ya kak 🙏</div>
+            <span class="self-end text-xs text-gray-400">${getTime()}</span>
+            `;
+            chatBox.appendChild(reply);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }, 800);
+        }
+
+        function getTime() {
+        const now = new Date();
+        return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+    </script>
+</body>
