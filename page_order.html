@@ -1,31 +1,25 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>mulyo pahat Register</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>mulyo pahat</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-    .font-playfair {
-      font-family: 'Playfair Display', serif;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><style>
+    body { font-family: 'Poppins', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
     .font-lora{
         font-family: 'Lora', 'sans-serif';
     }
   </style>
 </head>
-<body class="min-h-screen bg-[url('/img/sand-texture.png')] bg-cover bg-center bg-no-repeat">
-  <!-- Navbar -->
-  <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
+
+<body class="bg-[#f5f3f0] text-[#3c2613]">
+
+  <!-- NAVBAR -->
+   <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
     <div class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">mulyo pahat</div>
     <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
         <li class="flex items-center space-x-2 cursor-pointer">
@@ -50,54 +44,25 @@
         </button>
     </form>
   </nav>
-  <!-- Login box -->
-  <main class="flex justify-center items-center min-h-[calc(100vh-64px)] px-4">
-    <form
-      class="bg-[#F7F0E9] bg-opacity-90 rounded-xl max-w-md w-full p-8 text-[#3B2616] select-none"
-      autocomplete="off"
-    >
-      <h1 class="font-playfair text-5xl font-bold mb-6 text-center">mulyo pahat</h1>
-      <h2 class="text-xl font-semibold mb-2 text-center font-lora">sign-in using your account</h2>
 
-      <label class="block mb-3 text-sm" for="email">email</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        class="w-full rounded-md border border-[#3B2616] px-3 py-2 mb-4 text-[#3B2616] text-sm focus:outline-none"
-      />
+    <!-- About Us -->
+    <section class="bg-[url('./img/sand-texture.png')] bg-cover py-12">
+        <div class="flex flex-wrap gap-5 items-start">
+            <div class="md:w-[30%] mx-auto mt-8 mb-16 bg-[#3B2719ab] rounded-lg p-6 md:p-10">
+                <div class="md:w-[100%] mx-auto mt-0 mb-0 bg-[#d9c6b0dd] opacity-100 rounded-lg p-6 md:p-10">
+                    <div class="font-lora text-2xl mb-3">Order ORD-12345</div>
+                    <div class="flex justify-between font-lora">
+                        <i>Placed on 5/10/2025</i>
+                        <a href="page_product-desc.html">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-[60%] mx-auto mt-8 mb-16 bg-[#d9c6b0cc] rounded-lg p-6 md:p-10">
+            </div>
+        </div>
+    </section>
 
-      <label class="block mb-3 text-sm" for="password">password</label>
-      <input
-        id="password"
-        name="password"
-        type="password"
-        class="w-full rounded-md border border-[#3B2616] px-3 py-2 mb-4 text-[#3B2616] text-sm focus:outline-none"
-      />
-
-      <a class="inline-flex items-center mb-6 text-sm cursor-pointer">
-        forgot your password?
-      </a>
-
-      <button
-        type="submit"
-        class="w-full bg-[#3B2616] text-[#F7F0E9] font-playfair font-bold text-xl rounded-lg py-3 mb-6 hover:bg-[#2e1f11] transition-colors"
-      >
-        login
-      </button>
-
-      <p class="text-center text-xs mb-1">dont have an account?</p>
-      <p class="text-center text-xs mb-3">or sign-in using</p>
-
-      <div class="flex justify-center space-x-6 text-2xl">
-        <i class="fab fa-google cursor-pointer" aria-label="Register with Google"></i>
-        <i class="fab fa-meta cursor-pointer" aria-label="Register with Meta"></i>
-        <i class="fab fa-apple cursor-pointer" aria-label="Register with Apple"></i>
-      </div>
-    </form>
-  </main>
-
-  <!-- Footer -->
+  <!-- FOOTER -->
    <footer class="bg-[#3c2a1f] text-[#d9c6b0] py-5 px-6">
       <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8 mt-[2rem]">
          <div class="text-6xl font-semibold leading-tight select-none font-playfair">
@@ -149,6 +114,6 @@
       <div class="mt-[5rem] text-center text-xs font-extrabold tracking-widest">
          COPYRIGHT © MULYOPAHAT.COM 2025
       </div>
-  </footer>
+   </footer>
 </body>
 </html>

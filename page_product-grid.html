@@ -1,0 +1,440 @@
+<html lang="en">
+<head>
+   <meta charset="utf-8"/>
+   <meta content="width=device-width, initial-scale=1" name="viewport"/>
+   <title>
+   Rafi's Night Stand - acacia
+   </title>
+   <script src="https://cdn.tailwindcss.com">
+   </script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+   <link href="https://fonts.googleapis.com/css2?family=Georgia&amp;display=swap" rel="stylesheet"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <style>
+      body {
+         font-family: 'Poppins', sans-serif;
+      }
+      .font-playfair {
+         font-family: 'Playfair Display', serif;
+      }
+      .font-lora{
+         font-family: 'Lora', 'sans-serif';
+      }
+   </style>
+</head>
+<body class="bg-[url('img/sand-texture.png')] bg-cover bg-center min-h-screen text-[#3c2a1f]">
+   <!-- NAVBAR -->
+   <nav class="bg-[#3B2616] flex-row md:flex items-center justify-between px-6 py-2">
+    <div class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">mulyo pahat</div>
+    <ul class="flex-row md:flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
+        <li class="flex items-center space-x-2 cursor-pointer">
+            <i class="fas fa-bars"></i>
+            <span class="text-base">Products</span>
+        </li>
+        <li class="cursor-pointer text-base">Sales</li>
+        <li class="cursor-pointer text-base">About Us</li>
+    </ul>
+    <form class="relative">
+        <input
+            type="text"
+            placeholder="Search Bar"
+            class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
+        />
+        <button
+            type="button"
+            class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
+            aria-label="Clear search"
+        >
+        ×
+        </button>
+    </form>
+  </nav>
+   <!-- PRODUCTS -->
+   <main class="md:max-w-[70%] mx-auto mt-8 mb-16 bg-[#d9c6b0cc] rounded-lg p-0 md:p-10 ">
+      <div class="flex justify-start px-4 mb-5 gap-5">
+        <div class="text-center relative">
+            <button id="sortBtn" class="bg-[#3B2616] text-[#E6D7C3] px-6 py-2 rounded-full text-sm hover:bg-[#2e1d12] flex items-center gap-4">
+                sort
+                <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div id="sortDropdown" class="hidden absolute left-1/2 -translate-x-1/2 mt-2 w-32 bg-white border border-[#d9d9d9] rounded-lg shadow-lg z-10 text-[#3B2616] text-sm">
+                <ul>
+                    <li class="px-4 py-2 hover:bg-[#f5e9db] cursor-pointer">Harga Terendah</li>
+                    <li class="px-4 py-2 hover:bg-[#f5e9db] cursor-pointer">Harga Tertinggi</li>
+                    <li class="px-4 py-2 hover:bg-[#f5e9db] cursor-pointer">Nama A-Z</li>
+                    <li class="px-4 py-2 hover:bg-[#f5e9db] cursor-pointer">Nama Z-A</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center relative">
+            <button id="filterBtn" class="bg-[#3B2616] text-[#E6D7C3] px-6 py-2 rounded-full text-sm hover:bg-[#2e1d12] flex items-center gap-4">
+                filter
+                <i class="fas fa-chevron-down text-xs"></i>
+            </button>
+            <div id="filterDropdown" class="hidden absolute left-1/2 -translate-x-1/2 mt-2 w-32 bg-white border border-[#d9d9d9] rounded-lg shadow-lg z-10 text-[#3B2616] text-sm">
+                <ul>
+                    <li class="px-4 py-2 hover:bg-[#f5e9db] cursor-pointer">Acacia</li>
+                    <li class="px-4 py-2 hover:bg-[#f5e9db] cursor-pointer">Oak</li>
+                    <li class="px-4 py-2 hover:bg-[#f5e9db] cursor-pointer">Dark Oak</li>
+                    <li class="px-4 py-2 hover:bg-[#f5e9db] cursor-pointer">Spruce</li>
+                    <li class="px-4 py-2 hover:bg-[#f5e9db] cursor-pointer">Birch</li>
+                    <li class="px-4 py-2 hover:bg-[#f5e9db] cursor-pointer">Sakura</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <div class="flex justify-start gap-[5rem] flex-wrap px-4">
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" alt="Night Stand" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Night Stand</div>
+            <div class="text-sm">Rp 450.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/bc/06/87/bc0687bd79d535e6b91d9d5c95e41902.jpg" alt="Wardrobe" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Wardrobe</div>
+            <div class="text-sm">Rp 1.600.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/48/3a/f3/483af3d336bfcf1972e9e6996076528d.jpg" alt="Shelfes" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Shelfes</div>
+            <div class="text-sm">Rp 856.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/b0/96/80/b096805d5b79dc281a40fabb3a358461.jpg" alt="Chair" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Chair</div>
+            <div class="text-sm">Rp 650.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" alt="Night Stand" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Night Stand</div>
+            <div class="text-sm">Rp 450.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/bc/06/87/bc0687bd79d535e6b91d9d5c95e41902.jpg" alt="Wardrobe" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Wardrobe</div>
+            <div class="text-sm">Rp 1.600.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/48/3a/f3/483af3d336bfcf1972e9e6996076528d.jpg" alt="Shelfes" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Shelfes</div>
+            <div class="text-sm">Rp 856.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/b0/96/80/b096805d5b79dc281a40fabb3a358461.jpg" alt="Chair" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Chair</div>
+            <div class="text-sm">Rp 650.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" alt="Night Stand" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Night Stand</div>
+            <div class="text-sm">Rp 450.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/bc/06/87/bc0687bd79d535e6b91d9d5c95e41902.jpg" alt="Wardrobe" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Wardrobe</div>
+            <div class="text-sm">Rp 1.600.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/48/3a/f3/483af3d336bfcf1972e9e6996076528d.jpg" alt="Shelfes" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Shelfes</div>
+            <div class="text-sm">Rp 856.000</div>
+            </div>
+         </div>
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" alt="Night Stand" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Night Stand</div>
+            <div class="text-sm">Rp 450.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/bc/06/87/bc0687bd79d535e6b91d9d5c95e41902.jpg" alt="Wardrobe" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Wardrobe</div>
+            <div class="text-sm">Rp 1.600.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/48/3a/f3/483af3d336bfcf1972e9e6996076528d.jpg" alt="Shelfes" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Shelfes</div>
+            <div class="text-sm">Rp 856.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/b0/96/80/b096805d5b79dc281a40fabb3a358461.jpg" alt="Chair" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Chair</div>
+            <div class="text-sm">Rp 650.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" alt="Night Stand" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Night Stand</div>
+            <div class="text-sm">Rp 450.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/bc/06/87/bc0687bd79d535e6b91d9d5c95e41902.jpg" alt="Wardrobe" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Wardrobe</div>
+            <div class="text-sm">Rp 1.600.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/48/3a/f3/483af3d336bfcf1972e9e6996076528d.jpg" alt="Shelfes" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Shelfes</div>
+            <div class="text-sm">Rp 856.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/b0/96/80/b096805d5b79dc281a40fabb3a358461.jpg" alt="Chair" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Chair</div>
+            <div class="text-sm">Rp 650.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" alt="Night Stand" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Night Stand</div>
+            <div class="text-sm">Rp 450.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/bc/06/87/bc0687bd79d535e6b91d9d5c95e41902.jpg" alt="Wardrobe" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Wardrobe</div>
+            <div class="text-sm">Rp 1.600.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/48/3a/f3/483af3d336bfcf1972e9e6996076528d.jpg" alt="Shelfes" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Shelfes</div>
+            <div class="text-sm">Rp 856.000</div>
+            </div>
+         </div>
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" alt="Night Stand" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Night Stand</div>
+            <div class="text-sm">Rp 450.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/bc/06/87/bc0687bd79d535e6b91d9d5c95e41902.jpg" alt="Wardrobe" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Wardrobe</div>
+            <div class="text-sm">Rp 1.600.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/48/3a/f3/483af3d336bfcf1972e9e6996076528d.jpg" alt="Shelfes" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Shelfes</div>
+            <div class="text-sm">Rp 856.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/b0/96/80/b096805d5b79dc281a40fabb3a358461.jpg" alt="Chair" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Chair</div>
+            <div class="text-sm">Rp 650.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" alt="Night Stand" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Night Stand</div>
+            <div class="text-sm">Rp 450.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/bc/06/87/bc0687bd79d535e6b91d9d5c95e41902.jpg" alt="Wardrobe" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Wardrobe</div>
+            <div class="text-sm">Rp 1.600.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/48/3a/f3/483af3d336bfcf1972e9e6996076528d.jpg" alt="Shelfes" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Shelfes</div>
+            <div class="text-sm">Rp 856.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/b0/96/80/b096805d5b79dc281a40fabb3a358461.jpg" alt="Chair" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Chair</div>
+            <div class="text-sm">Rp 650.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" alt="Night Stand" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Night Stand</div>
+            <div class="text-sm">Rp 450.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/bc/06/87/bc0687bd79d535e6b91d9d5c95e41902.jpg" alt="Wardrobe" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Wardrobe</div>
+            <div class="text-sm">Rp 1.600.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/48/3a/f3/483af3d336bfcf1972e9e6996076528d.jpg" alt="Shelfes" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Shelfes</div>
+            <div class="text-sm">Rp 856.000</div>
+            </div>
+         </div>
+
+         <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
+            <img src="https://i.pinimg.com/736x/b0/96/80/b096805d5b79dc281a40fabb3a358461.jpg" alt="Chair" class="rounded-2xl"/>
+            <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
+            <div class="font-semibold">Chair</div>
+            <div class="text-sm">Rp 650.000</div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <!-- FOOTER -->
+   <footer class="bg-[#3c2a1f] text-[#d9c6b0] py-5 px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8 mt-[2rem]">
+         <div class="text-6xl font-semibold leading-tight select-none font-playfair">
+            mulyo pahat.
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora justify-self-center">company</h3>
+            <ul class="space-y-2 text-sm justify-items-center">
+               <li>
+                  <a class="hover:underline" href="page_home.html">FAQ</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="page_home.html">BLOG</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="page_home.html">CONTROLS</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="page_about-us.html">ABOUT US</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora justify-self-center">customer service</h3>
+            <ul class="space-y-2 text-sm justify-items-center">
+               <li>
+                  <a class="hover:underline" href="page_about-us.html">CONTACT US</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="page_home.html">STORE LOCATOR</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="page_home.html">REDEEM REWARDS</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora justify-self-center">account</h3>
+            <ul class="space-y-2 text-sm justify-items-center">
+               <li>
+                  <a class="hover:underline" href="page_profile.html">MY ACCOUNT</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="page_order">ORDERS</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-[5rem] text-center text-xs font-extrabold tracking-widest">
+         COPYRIGHT © MULYOPAHAT.COM 2025
+      </div>
+   </footer>
+
+   <!-- DROPDOWN SCRIPT -->
+    <script>
+        // Dropdown toggle logic
+        const sortBtn = document.getElementById('sortBtn');
+        const sortDropdown = document.getElementById('sortDropdown');
+        document.addEventListener('click', function(e) {
+            if (sortBtn.contains(e.target)) {
+                sortDropdown.classList.toggle('hidden');
+            } else if (!sortDropdown.contains(e.target)) {
+                sortDropdown.classList.add('hidden');
+            }
+        });
+        
+        // Dropdown toggle logic
+        const filterBtn = document.getElementById('filterBtn');
+        const filterDropdown = document.getElementById('filterDropdown');
+        document.addEventListener('click', function(e) {
+            if (filterBtn.contains(e.target)) {
+                filterDropdown.classList.toggle('hidden');
+            } else if (!sortDropfilterDropdowndown.contains(e.target)) {
+                filterDropdown.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
