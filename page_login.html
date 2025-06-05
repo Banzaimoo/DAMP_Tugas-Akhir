@@ -25,32 +25,33 @@
   </style>
 </head>
 <body class="min-h-screen bg-[url('/img/sand-texture.png')] bg-cover bg-center bg-no-repeat">
-  <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-4">
-    <div class="font-playfair font-semibold text-4xl text-[#E6D7C3] select-none">mulyo pahat</div>
+  <!-- Navbar -->
+  <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
+    <div class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">mulyo pahat</div>
     <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
-      <li class="flex items-center space-x-2 cursor-pointer">
-        <i class="fas fa-bars"></i>
-        <span>Products</span>
-      </li>
-      <li class="cursor-pointer">Sales</li>
-      <li class="cursor-pointer">About Us</li>
+        <li class="flex items-center space-x-2 cursor-pointer">
+            <i class="fas fa-bars"></i>
+            <span class="text-base">Products</span>
+        </li>
+        <li class="cursor-pointer text-base">Sales</li>
+        <li class="cursor-pointer text-base">About Us</li>
     </ul>
     <form class="relative">
-      <input
-        type="text"
-        placeholder="Search Bar"
-        class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
-      />
-      <button
-        type="button"
-        class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
-        aria-label="Clear search"
-      >
+        <input
+            type="text"
+            placeholder="Search Bar"
+            class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
+        />
+        <button
+            type="button"
+            class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
+            aria-label="Clear search"
+        >
         ×
-      </button>
+        </button>
     </form>
   </nav>
-
+  <!-- Login box -->
   <main class="flex justify-center items-center min-h-[calc(100vh-64px)] px-4">
     <form
       class="bg-[#F7F0E9] bg-opacity-90 rounded-xl max-w-md w-full p-8 text-[#3B2616] select-none"
@@ -96,5 +97,59 @@
       </div>
     </form>
   </main>
+
+  <!-- Footer -->
+   <footer class="bg-[#3c2a1f] text-[#d9c6b0] py-5 px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8 mt-[2rem]">
+         <div class="text-6xl font-semibold leading-tight select-none font-playfair">
+            mulyo pahat.
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">company</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">FAQ</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">BLOG</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">CONTROLS</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">ABOUT US</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">customer service</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">CONTACT US</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">STORE LOCATOR</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">REDEEM REWARDS</a>
+               </li>
+            </ul>
+         </div>
+         <div>
+            <h3 class="font-semibold text-xl mb-3 font-lora">account</h3>
+            <ul class="space-y-2 text-sm">
+               <li>
+                  <a class="hover:underline" href="#">MY ACCOUNT</a>
+               </li>
+               <li>
+                  <a class="hover:underline" href="#">ORDERS</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="mt-[5rem] text-center text-xs font-extrabold tracking-widest">
+         COPYRIGHT © MULYOPAHAT.COM 2025
+      </div>
+  </footer>
 </body>
 </html>
