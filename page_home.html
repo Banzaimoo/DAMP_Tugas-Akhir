@@ -27,29 +27,54 @@
 
   <!-- NAVBAR -->
    <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
-    <div class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">mulyo pahat</div>
+    <a href="./page_home2.html" class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">
+        mulyo pahat
+    </a>
     <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
-        <li class="flex items-center space-x-2 cursor-pointer">
-            <i class="fas fa-bars"></i>
-            <span class="text-base">Products</span>
-        </li>
-        <li class="cursor-pointer text-base">Sales</li>
-        <li class="cursor-pointer text-base">About Us</li>
+    <li class="relative">
+  <div class="flex items-center space-x-2 text-[#E6D7C3]">
+    <i id="burger-icon" class="fas fa-bars cursor-pointer"></i>
+    <a href="./page_product-grid.html" class="text-base">Products</a>
+  </div>
+
+  <div id="burger-menu" class="absolute top-full left-0 mt-2 bg-[#3B2616] text-[#E6D7C3] rounded-md shadow-md hidden z-50">
+    <ul class="flex flex-col p-4 space-y-2 text-sm">
+      <li><a href="#">All Products</a></li>
+      <li><a href="#">Furniture</a></li>
+      <li><a href="#">Decor</a></li>
+      <li><a href="#">Custom Orders</a></li>
     </ul>
+  </div>
+</li>
+        <li class="cursor-pointer text-base">
+            <a href="./Chat.html">Chat</a>
+        </li>
+        <li class="cursor-pointer text-base">
+            <a href="./about_us.html">About Us</a>
+        </li>
+    </ul>
+    <div class="flex items-center space-x-4">
     <form class="relative">
         <input
-            type="text"
-            placeholder="Search Bar"
-            class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
+        type="text"
+        placeholder="Search Bar"
+        class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
         />
         <button
-            type="button"
-            class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
-            aria-label="Clear search"
+        type="button"
+        class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
+        aria-label="Clear search"
         >
         ×
         </button>
     </form>
+
+    <!-- Login Button -->
+    <a href="./page_login.html" class="bg-[#E6D7C3] text-[#3B2616] px-4 py-2 rounded-full text-sm font-medium hover:bg-[#d2bea5] transition">
+        Login
+    </a>
+    </div>
+
   </nav>
 
   <!-- Hero -->
@@ -114,13 +139,13 @@
   <section class="py-12 px-6 bg-[#eee3d3] text-center">
     <div class="text-2xl font-lora mb-8 font-medium">our trusted workshop</div>
     <div class="flex justify-center gap-8 flex-wrap">
-      <img src="https://media.discordapp.net/attachments/1290316555002839100/1379117281304641577/image_5.png?ex=683f128e&is=683dc10e&hm=3819282c9c19c9c55258b12e27bd93b2974542b5c7257558fd20332c5fbb3b72&=&format=webp&quality=lossless&width=555&height=555" alt="Wotwood" class="h-40"/>
-      <img src="https://media.discordapp.net/attachments/1290316555002839100/1379117281698775040/image_6.png?ex=683f128e&is=683dc10e&hm=ec0e794ff34c453092d7156eda92b1aa6929c40da57a9afa253cedf7461cee7d&=&format=webp&quality=lossless&width=555&height=555" alt="Global" class="h-40"/>
-      <img src="https://media.discordapp.net/attachments/1290316555002839100/1379117282122534942/image_7.png?ex=683f128e&is=683dc10e&hm=c8ae6cc84f9e553ccf379cccfbb934443a875bbab073ed449d0b6648fe8ebc44&=&format=webp&quality=lossless&width=555&height=555" alt="Eco" class="h-40"/>
-      <img src="https://media.discordapp.net/attachments/1290316555002839100/1379117282466336808/image_8.png?ex=683f128e&is=683dc10e&hm=3a3bec3c64f217d3c0f6690c563b54d34c852c4ea783340cbf8c34accf7afecb&=&format=webp&quality=lossless&width=555&height=555" alt="Carpentry" class="h-40"/>
+      <img src="./img/img_profile-toko_1.png" alt="Wotwood" class="h-40"/>
+      <img src="./img/img_profile-toko_2.png" alt="Global" class="h-40"/>
+      <img src="./img/img_profile-toko_3.png" alt="Eco" class="h-40"/>
+      <img src="./img/img_profile-toko.png" alt="Carpentry" class="h-40"/>
     </div>
     <div class="text-center mt-6">
-    <button class="bg-[#3B2616] text-[#E6D7C3] px-6 py-2 rounded-full text-sm hover:bg-[#2e1d12]">view more</button>
+    <a href="./page_store.html" class="bg-[#3B2616] text-[#E6D7C3] px-6 py-2 rounded-full text-sm hover:bg-[#2e1d12]">view more</a>
   </div>
   </section>
 
@@ -137,9 +162,9 @@
         source each material. From minimalist to rustic, Mulyo Pahat’s pieces are built to enrich
         homes with warmth, character, and a distinctive design signature.
       </p>
-      <button class="mt-4 bg-[#3B2616] text-[#E6D7C3] px-6 py-2 rounded-full text-sm hover:bg-[#2e1d12]">
-        learn more
-      </button>
+      <a href="./page_about-us.html" class="mt-4 inline-block bg-[#3B2616] text-[#E6D7C3] px-6 py-2 rounded-full text-sm hover:bg-[#2e1d12]">
+        Learn More
+    </a>
     </div>
     
     <div class="pr-6 lg:pr-12">
@@ -209,4 +234,22 @@
   </footer>
 
 </body>
+
+<script>
+  const burgerIcon = document.getElementById("burger-icon");
+  const burgerMenu = document.getElementById("burger-menu");
+
+  burgerIcon.addEventListener("click", () => {
+    burgerMenu.classList.toggle("hidden");
+  });
+
+  // Optional: Hide menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!burgerIcon.contains(e.target) && !burgerMenu.contains(e.target)) {
+      burgerMenu.classList.add("hidden");
+    }
+  });
+</script>
+
+
 </html>
