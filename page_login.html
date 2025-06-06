@@ -26,30 +26,56 @@
 <body class="min-h-screen bg-[url('/img/sand-texture.png')] bg-cover bg-center bg-no-repeat">
   <!-- Navbar -->
   <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
-    <div class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">mulyo pahat</div>
+    <a href="./page_home2.html" class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">
+        mulyo pahat
+    </a>
     <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
-        <li class="flex items-center space-x-2 cursor-pointer">
-            <i class="fas fa-bars"></i>
-            <span class="text-base">Products</span>
-        </li>
-        <li class="cursor-pointer text-base">Sales</li>
-        <li class="cursor-pointer text-base">About Us</li>
+    <li class="relative">
+  <div class="flex items-center space-x-2 text-[#E6D7C3]">
+    <i id="burger-icon" class="fas fa-bars cursor-pointer"></i>
+    <a href="./page_product-grid.html" class="text-base">Products</a>
+  </div>
+
+  <div id="burger-menu" class="absolute top-full left-0 mt-2 bg-[#3B2616] text-[#E6D7C3] rounded-md shadow-md hidden z-50">
+    <ul class="flex flex-col p-4 space-y-2 text-sm">
+      <li><a href="#">Night Stand</a></li>
+      <li><a href="#">Wardrobe</a></li>
+      <li><a href="#">Chair</a></li>
+      <li><a href="#">Table</a></li>
     </ul>
-    <form class="relative">
-        <input
-            type="text"
-            placeholder="Search Bar"
-            class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
-        />
-        <button
-            type="button"
-            class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
-            aria-label="Clear search"
-        >
-        ×
-        </button>
-    </form>
+  </div>
+</li>
+        <li class="cursor-pointer text-base">
+            <a href="./Chat.html">Chat</a>
+        </li>
+        <li class="cursor-pointer text-base">
+            <a href="./about_us.html">About Us</a>
+        </li>
+    </ul>
+    <div class="flex items-center space-x-4">
+      <form class="relative">
+          <input
+          type="text"
+          placeholder="Search Bar"
+          class="rounded-full h-[2.5rem] py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
+          />
+          <button
+          type="button"
+          class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
+          aria-label="Clear search"
+          >
+          ×
+          </button>
+      </form>
+
+      <!-- Profile Button -->
+      <a href="./page_login.html" class="flex items-center h-[2.5rem] w-[4rem] bg-white text-[#3B2616] justify-center rounded-full text-sm font-medium hover:bg-[#d2bea5] transition">
+          login
+      </a>
+    </div>
+
   </nav>
+  
   <!-- Login box -->
   <main class="flex justify-center items-center min-h-[calc(100vh-64px)] px-4">
     <form
