@@ -26,8 +26,8 @@
 <body class="bg-[#f5f3f0] text-[#3c2613]">
 
   <!-- NAVBAR -->
-   <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
-    <a href="./page_home2.html" class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">
+  <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
+    <a href="./page_home.html" class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">
         mulyo pahat
     </a>
     <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
@@ -47,26 +47,37 @@
   </div>
 </li>
         <li class="cursor-pointer text-base">
-            <a href="./Chat.html">Chat</a>
+            <a href="./page_Chat.html">Chat</a>
         </li>
         <li class="cursor-pointer text-base">
-            <a href="./about_us.html">About Us</a>
+            <a href="./page_about_us.html">About Us</a>
         </li>
     </ul>
-    <form class="relative">
-        <input
-            type="text"
-            placeholder="Search Bar"
-            class="rounded-full py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
-        />
-        <button
-            type="button"
-            class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
-            aria-label="Clear search"
-        >
-        ×
-        </button>
-    </form>
+    <div class="flex items-center space-x-4">
+      <a href="./page_cart.html" class="flex items-center justify-center h-[2.5rem] w-[2.5rem]  text-white rounded-full hover:bg-[#d2bea5] transition">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+      <form class="relative">
+          <input
+          type="text"
+          placeholder="Search Bar"
+          class="rounded-full h-[2.5rem] py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
+          />
+          <button
+          type="button"
+          class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
+          aria-label="Clear search"
+          >
+          ×
+          </button>
+      </form>
+
+    <!-- Profile Button -->
+      <a href="./page_profile.html" class="flex items-center h-[2.5rem] w-[2.5rem] bg-white text-[#3B2616] justify-center rounded-full text-sm font-medium hover:bg-[#d2bea5] transition">
+          <i class="fas fa-user"></i> 
+      </a>
+    </div>
+
   </nav>
 
   <!-- Hero -->

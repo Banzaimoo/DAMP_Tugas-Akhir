@@ -24,7 +24,7 @@
     }
   </style>
 </head>
-<body class="min-h-screen bg-[url('/img/sand-texture.png')] bg-cover bg-center bg-no-repeat">
+<body class="min-h-screen bg-[url('./img/sand-texture.png')] bg-cover bg-center bg-no-repeat">
   <!-- NAVBAR -->
   <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
     <a href="./page_home2.html" class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">
@@ -47,10 +47,10 @@
   </div>
 </li>
         <li class="cursor-pointer text-base">
-            <a href="./Chat.html">Chat</a>
+            <a href="./page_Chat.html">Chat</a>
         </li>
         <li class="cursor-pointer text-base">
-            <a href="./about_us.html">About Us</a>
+            <a href="./page_about_us.html">About Us</a>
         </li>
     </ul>
     <div class="flex items-center space-x-4">
@@ -69,10 +69,10 @@
           </button>
       </form>
 
-      <!-- Profile Button -->
-      <a href="./page_login.html" class="flex items-center h-[2.5rem] w-[4rem] bg-white text-[#3B2616] justify-center rounded-full text-sm font-medium hover:bg-[#d2bea5] transition">
-          login
-      </a>
+      <!-- Login Button -->
+    <a href="./page_login.html" class="bg-[#E6D7C3] text-[#3B2616] px-4 py-2 rounded-full text-sm font-medium hover:bg-[#d2bea5] transition">
+        Login
+    </a>
     </div>
 
   </nav>
@@ -127,10 +127,10 @@
         type="submit"
         class="w-full bg-[#3B2616] text-[#F7F0E9] font-playfair font-bold text-xl rounded-lg py-3 mb-6 hover:bg-[#2e1f11] transition-colors"
       >
-        register
+        <a href="./page_home.html">register</a>
       </button>
 
-      <p class="text-center text-xs mb-1">already have an account?</p>
+      <p class="text-center text-xs mb-1"><a href="./page_login.html">already have an account?</aa></p>
       <p class="text-center text-xs mb-3">or register using</p>
 
       <div class="flex justify-center space-x-6 text-2xl">
@@ -195,4 +195,21 @@
       </div>
   </footer>
 </body>
+
+<script>
+  const burgerIcon = document.getElementById("burger-icon");
+  const burgerMenu = document.getElementById("burger-menu");
+
+  burgerIcon.addEventListener("click", () => {
+    burgerMenu.classList.toggle("hidden");
+  });
+
+  // Optional: Hide menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!burgerIcon.contains(e.target) && !burgerMenu.contains(e.target)) {
+      burgerMenu.classList.add("hidden");
+    }
+  });
+</script>
+
 </html>

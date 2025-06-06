@@ -37,14 +37,14 @@
   </div>
 </li>
         <li class="cursor-pointer text-base">
-            <a href="./Chat.html">Chat</a>
+            <a href="./page_Chat.html">Chat</a>
         </li>
         <li class="cursor-pointer text-base">
-            <a href="./about_us.html">About Us</a>
+            <a href="./page_about_us.html">About Us</a>
         </li>
     </ul>
     <div class="flex items-center space-x-4">
-      <a href="./cart.html" class="flex items-center justify-center h-[2.5rem] w-[2.5rem]  text-white rounded-full hover:bg-[#d2bea5] transition">
+      <a href="./page_cart.html" class="flex items-center justify-center h-[2.5rem] w-[2.5rem]  text-white rounded-full hover:bg-[#d2bea5] transition">
         <i class="fas fa-shopping-cart"></i>
       </a>
       <form class="relative">
@@ -167,4 +167,21 @@
   </footer>
 
 </body>
+
+<script>
+  const burgerIcon = document.getElementById("burger-icon");
+  const burgerMenu = document.getElementById("burger-menu");
+
+  burgerIcon.addEventListener("click", () => {
+    burgerMenu.classList.toggle("hidden");
+  });
+
+  // Optional: Hide menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!burgerIcon.contains(e.target) && !burgerMenu.contains(e.target)) {
+      burgerMenu.classList.add("hidden");
+    }
+  });
+</script>
+
 </html>

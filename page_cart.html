@@ -19,7 +19,7 @@
 <body class="bg-[url('./img/sand-texture.png')] text-[#3c2613]">
     <!-- NAVBAR -->
   <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
-    <a href="./page_home2.html" class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">
+    <a href="./page_home.html" class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">
         mulyo pahat
     </a>
     <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
@@ -39,14 +39,14 @@
   </div>
 </li>
         <li class="cursor-pointer text-base">
-            <a href="./Chat.html">Chat</a>
+            <a href="./page_Chat.html">Chat</a>
         </li>
         <li class="cursor-pointer text-base">
-            <a href="./about_us.html">About Us</a>
+            <a href="./page_about_us.html">About Us</a>
         </li>
     </ul>
     <div class="flex items-center space-x-4">
-      <a href="./cart.html" class="flex items-center justify-center h-[2.5rem] w-[2.5rem]  text-white rounded-full hover:bg-[#d2bea5] transition">
+      <a href="./page_cart.html" class="flex items-center justify-center h-[2.5rem] w-[2.5rem]  text-white rounded-full hover:bg-[#d2bea5] transition">
         <i class="fas fa-shopping-cart"></i>
       </a>
       <form class="relative">
@@ -126,7 +126,7 @@
         </div>
       </div>
       <button class="mt-6 w-full bg-[#3B2616] hover:bg-[#4d3725] text-[#E6D7C3] py-3 rounded-lg font-semibold transition-colors">
-        Check Out
+        <a href="./page_order.html">Check Out</a>
       </button>
     </div>
   </div>
@@ -136,12 +136,12 @@
   <!-- Section Header -->
   <div class="flex justify-between items-center mb-4">
     <h3 class="text-lg font-semibold">find more of our design</h3>
-    <button class="bg-[#3B2616] text-[#E6D7C3] px-4 py-2 text-sm rounded-lg hover:bg-[#4d3725] transition-colors">view more</button>
+    <button class="bg-[#3B2616] text-[#E6D7C3] px-4 py-2 text-sm rounded-lg hover:bg-[#4d3725] transition-colors"><a href="./page_product-grid.html">view more</a></button>
   </div>
 
   <!-- Product Grid -->
   <div class="bg-white/70 rounded-xl p-6 shadow-lg grid grid-cols-2 sm:grid-cols-4 gap-6">
-    <a href="#" class="bg-white rounded-xl p-2 shadow-md hover:shadow-xl transition duration-300">
+    <a href="./page_product-desc.html" class="bg-white rounded-xl p-2 shadow-md hover:shadow-xl transition duration-300">
       <img src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" alt="product" class="w-full h-full object-cover rounded-lg mx-auto"/>
     </a>
     <a href="#" class="bg-white rounded-xl p-2 shadow-md hover:shadow-xl transition duration-300">
@@ -193,4 +193,21 @@
     </div>
   </footer>
 </body>
+
+<script>
+  const burgerIcon = document.getElementById("burger-icon");
+  const burgerMenu = document.getElementById("burger-menu");
+
+  burgerIcon.addEventListener("click", () => {
+    burgerMenu.classList.toggle("hidden");
+  });
+
+  // Optional: Hide menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!burgerIcon.contains(e.target) && !burgerMenu.contains(e.target)) {
+      burgerMenu.classList.add("hidden");
+    }
+  });
+</script>
+
 </html>

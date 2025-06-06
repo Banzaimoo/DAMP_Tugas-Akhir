@@ -27,7 +27,7 @@
 <body class="bg-[url('img/sand-texture.png')] bg-cover bg-center min-h-screen text-[#3c2a1f]">
    <!-- NAVBAR -->
   <nav class="bg-[#3B2616] flex items-center justify-between px-6 py-2">
-    <a href="./page_home2.html" class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">
+    <a href="./page_home.html" class="font-playfair font-semibold text-3xl text-[#E6D7C3] select-none">
         mulyo pahat
     </a>
     <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
@@ -47,14 +47,14 @@
   </div>
 </li>
         <li class="cursor-pointer text-base">
-            <a href="./Chat.html">Chat</a>
+            <a href="./page_Chat.html">Chat</a>
         </li>
         <li class="cursor-pointer text-base">
-            <a href="./about_us.html">About Us</a>
+            <a href="./page_about_us.html">About Us</a>
         </li>
     </ul>
     <div class="flex items-center space-x-4">
-      <a href="./cart.html" class="flex items-center justify-center h-[2.5rem] w-[2.5rem]  text-white rounded-full hover:bg-[#d2bea5] transition">
+      <a href="./page_cart.html" class="flex items-center justify-center h-[2.5rem] w-[2.5rem]  text-white rounded-full hover:bg-[#d2bea5] transition">
         <i class="fas fa-shopping-cart"></i>
       </a>
       <form class="relative">
@@ -72,7 +72,7 @@
           </button>
       </form>
 
-      <!-- Profile Button -->
+    <!-- Profile Button -->
       <a href="./page_profile.html" class="flex items-center h-[2.5rem] w-[2.5rem] bg-white text-[#3B2616] justify-center rounded-full text-sm font-medium hover:bg-[#d2bea5] transition">
           <i class="fas fa-user"></i> 
       </a>
@@ -85,7 +85,7 @@
       <!-- PICTURE, VARIANT AND PRICE -->
       <section class="flex flex-col md:flex-row md:space-x-10">
          <div>
-            <img alt="Wooden night stand with a tea set on top and books on the lower shelf, photographed in a studio with a neutral background" class="rounded-md shadow-md w-72 h-72 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/c56e5d0f-fc5d-40c8-899b-bee2753e9721.jpg" width="300"/>
+            <img alt="Wooden night stand with a tea set on top and books on the lower shelf, photographed in a studio with a neutral background" class="rounded-md shadow-md w-72 h-72 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" width="300"/>
             <div class="flex space-x-2 mt-3">
                <img alt="Thumbnail image of wooden night stand variant 1" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/5fdaa7ef-42f7-4d79-b3bb-b0aeab148d3c.jpg" width="48"/>
                <img alt="Thumbnail image of wooden night stand variant 2" class="rounded-md cursor-pointer border border-transparent hover:border-[#3c2a1f]" height="48" src="https://storage.googleapis.com/a1aa/image/1281c67c-ca5b-4245-0244-f95e9f2d946b.jpg" width="48"/>
@@ -128,7 +128,7 @@
                      <span class="text-lg font-semibold select-none">1</span>
                      <button aria-label="Increase quantity" class="w-8 h-8 rounded-full border border-[#3c2a1f] flex items-center justify-center text-lg font-bold">+</button>
                   </div>
-                  <button class="bg-[#3c2a1f] text-[#d9c6b0] rounded-full px-8 py-2 text-sm font-normal">Add to cart</button>
+                  <button class="bg-[#3c2a1f] text-[#d9c6b0] rounded-full px-8 py-2 text-sm font-normal"><a href="./page_cart.html">Add to cart</a></button>
                </div>
          </div>
       </section>
@@ -206,10 +206,10 @@
          </div>
          <div class="flex space-x-3">
          <button class="bg-[#3c2a1f] text-[#d9c6b0] rounded-full px-4 py-1 text-xs font-normal">
-         visit artisan
+         <a href="./page_store.html">visit artisan</a>
          </button>
          <button class="bg-[#3c2a1f] text-[#d9c6b0] rounded-full px-4 py-1 text-xs font-normal">
-         message
+         <a href="./page_chat.html">message</a>
          </button>
          </div>
       </section>
@@ -269,4 +269,21 @@
       </div>
    </footer>
 </body>
+
+<script>
+  const burgerIcon = document.getElementById("burger-icon");
+  const burgerMenu = document.getElementById("burger-menu");
+
+  burgerIcon.addEventListener("click", () => {
+    burgerMenu.classList.toggle("hidden");
+  });
+
+  // Optional: Hide menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!burgerIcon.contains(e.target) && !burgerMenu.contains(e.target)) {
+      burgerMenu.classList.add("hidden");
+    }
+  });
+</script>
+
 </html>
