@@ -31,53 +31,49 @@
         mulyo pahat
     </a>
     <ul class="flex items-center space-x-12 text-[#E6D7C3] text-lg font-normal gap-[15rem]">
-    <li class="relative">
-  <div class="flex items-center space-x-2 text-[#E6D7C3]">
-    <i id="burger-icon" class="fas fa-bars cursor-pointer"></i>
-    <a href="./page_product-grid.html" class="text-base">Products</a>
-  </div>
+      <li class="relative">
+         <div class="flex items-center space-x-2 text-[#E6D7C3]">
+            <i id="burger-icon" class="fas fa-bars cursor-pointer"></i>
+            <a href="./page_product-grid.html" class="text-base">Products</a>
+         </div>
 
-  <div id="burger-menu" class="absolute top-full left-0 mt-2 bg-[#3B2616] text-[#E6D7C3] rounded-md shadow-md hidden z-50">
-    <ul class="flex flex-col p-4 space-y-2 text-sm">
-      <li><a href="#">Night Stand</a></li>
-      <li><a href="#">Wardrobe</a></li>
-      <li><a href="#">Chair</a></li>
-      <li><a href="#">Table</a></li>
+         <div id="burger-menu" class="absolute top-full left-0 mt-2 bg-[#3B2616] text-[#E6D7C3] rounded-md shadow-md hidden z-50">
+            <ul class="flex flex-col p-4 space-y-2 text-sm">
+               <li><a href="#">Night Stand</a></li>
+               <li><a href="#">Wardrobe</a></li>
+               <li><a href="#">Chair</a></li>
+               <li><a href="#">Table</a></li>
+            </ul>
+         </div>
+      </li>
+      <li class="cursor-pointer text-base">
+         <a href="./page_Chat.html">Chat</a>
+      </li>
+      <li class="cursor-pointer text-base">
+         <a href="./page_about_us.html">About Us</a>
+      </li>
     </ul>
-  </div>
-</li>
-        <li class="cursor-pointer text-base">
-            <a href="./page_Chat.html">Chat</a>
-        </li>
-        <li class="cursor-pointer text-base">
-            <a href="./page_about_us.html">About Us</a>
-        </li>
-    </ul>
-    <div class="flex items-center space-x-4">
-      <a href="./page_cart.html" class="flex items-center justify-center h-[2.5rem] w-[2.5rem]  text-white rounded-full hover:bg-[#d2bea5] transition">
-        <i class="fas fa-shopping-cart"></i>
-      </a>
-      <form class="relative">
-          <input
-          type="text"
-          placeholder="Search Bar"
-          class="rounded-full h-[2.5rem] py-2 px-4 w-70 mt-1 text-sm text-[#3B2616] font-normal focus:outline-none"
-          />
-          <button
-          type="button"
-          class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
-          aria-label="Clear search"
-          >
-          ×
-          </button>
-      </form>
+   <div class="flex items-center space-x-4">
+     <form class="relative flex items-center">
+        <input
+        type="text"
+        placeholder="Search Bar"
+        class="rounded-full h-[2.5rem] py-2 px-4 w-70 text-sm text-[#3B2616] font-normal focus:outline-none"
+        />
+        <button
+        type="button"
+        class="absolute right-2 top-1/2 -translate-y-1/2 text-[#3B2616] text-sm font-bold"
+        aria-label="Clear search"
+        >
+        ×
+        </button>
+     </form>
 
-    <!-- Login Button -->
-    <a href="./page_login.html" class="bg-[#E6D7C3] text-[#3B2616] px-4 py-2 rounded-full text-sm font-medium hover:bg-[#d2bea5] transition">
-        Login
-    </a>
-    </div>
-
+     <!-- Profile Button -->
+     <a href="./page_login.html" class="flex items-center h-[2.5rem] w-[4rem] bg-white text-[#3B2616] justify-center rounded-full text-sm font-medium hover:bg-[#d2bea5] transition leading-none">
+       login
+     </a>
+   </div>
   </nav>
 
   <!-- Hero -->
@@ -93,7 +89,7 @@
     </div>
   </section>
 
-<!-- Best Seller -->
+  <!-- Best Seller -->
   <section class="bg-[url('./img/sand-texture.png')] bg-cover py-12">
     <div class="text-center text-2xl font-lora mb-8 font-medium">our best seller</div>
     <div class="flex justify-center gap-6 flex-wrap px-4">
@@ -102,7 +98,7 @@
       <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
         <img src="https://storage.googleapis.com/a1aa/image/bb8e04d0-c64d-4332-df7c-866d1e53a90c.jpg" alt="Night Stand" class="rounded-2xl"/>
         <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
-          <div class="font-semibold">Night Stand</div>
+          <div class="font-semibold"><a href="./page_product-desc.html">Night Stand</a></div>
           <div class="text-sm">Rp 450.000</div>
         </div>
       </div>
@@ -110,7 +106,7 @@
       <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
         <img src="https://i.pinimg.com/736x/bc/06/87/bc0687bd79d535e6b91d9d5c95e41902.jpg" alt="Wardrobe" class="rounded-2xl"/>
         <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
-          <div class="font-semibold">Wardrobe</div>
+          <div class="font-semibold"><a href="./page_product-desc.html">Wardrobe</a></div>
           <div class="text-sm">Rp 1.600.000</div>
         </div>
       </div>
@@ -118,7 +114,7 @@
       <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
         <img src="https://i.pinimg.com/736x/48/3a/f3/483af3d336bfcf1972e9e6996076528d.jpg" alt="Shelfes" class="rounded-2xl"/>
         <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
-          <div class="font-semibold">Shelfes</div>
+          <div class="font-semibold"><a href="./page_product-desc.html">Shelfes</a></div>
           <div class="text-sm">Rp 856.000</div>
         </div>
       </div>
@@ -126,14 +122,14 @@
       <div class="group border border-[#d9d9d9] rounded-3xl p-0 w-44 text-center shadow-md overflow-hidden relative">
         <img src="https://i.pinimg.com/736x/b0/96/80/b096805d5b79dc281a40fabb3a358461.jpg" alt="Chair" class="rounded-2xl"/>
         <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-white">
-          <div class="font-semibold">Chair</div>
+          <div class="font-semibold"><a href="./page_product-desc.html">Chair</a></div>
           <div class="text-sm">Rp 650.000</div>
         </div>
       </div>
 
     </div>
     <div class="text-center mt-6">
-      <button onclick="window.location.href='./page_product-grid.html'" class="bg-[#3B2616] text-[#E6D7C3] px-6 py-2 rounded-full text-sm hover:bg-[#2e1d12]">view more</button>
+      <button class="bg-[#3B2616] text-[#E6D7C3] px-6 py-2 rounded-full text-sm hover:bg-[#2e1d12]"><a href="./page_product-grid.html">view more</a></button>
     </div>
   </section>
 
@@ -142,44 +138,44 @@
   <section class="py-12 px-6 bg-[#eee3d3] text-center">
     <div class="text-2xl font-lora mb-8 font-medium">our trusted workshop</div>
     <div class="flex justify-center gap-8 flex-wrap">
-      <img src="./img/img_profile-toko_1.png" alt="Wotwood" class="h-40"/>
-      <img src="./img/img_profile-toko_2.png" alt="Global" class="h-40"/>
-      <img src="./img/img_profile-toko_3.png" alt="Eco" class="h-40"/>
-      <img src="./img/img_profile-toko.png" alt="Carpentry" class="h-40"/>
+      <img src="./img/img_profile-toko_1.png" alt="Wotwood" class="h-40" onclick="window.location.href='./page_store.html'"/>
+      <img src="./img/img_profile-toko_2.png" alt="Global" class="h-40" onclick="window.location.href='./page_store.html'"/>
+      <img src="./img/img_profile-toko_3.png" alt="Eco" class="h-40" onclick="window.location.href='./page_store.html'"/>
+      <img src="./img/img_profile-toko.png" alt="Carpentry" class="h-40" onclick="window.location.href='./page_store.html'"/>
     </div>
     <div class="text-center mt-6">
     <a href="./page_store.html" class="bg-[#3B2616] text-[#E6D7C3] px-6 py-2 rounded-full text-sm hover:bg-[#2e1d12]">view more</a>
   </div>
   </section>
 
-<!-- About Us -->
-<section class="bg-[url('./img/sand-texture.png')] bg-cover py-12">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8">
-    
-    <div class="px-0">
-      <h2 class="text-3xl font-lora text-[#3c2613] mb-4 font-medium">about us</h2>
-      <p class="text-[#3c2613] text-base leading-relaxed">
-        Mulyo Pahat has flourished with a singular mission: to create furniture that lasts.
-        We take pride in merging traditional craftsmanship with contemporary designs.
-        Our team consists of skilled artisans who carefully select quality wood and sustainably
-        source each material. From minimalist to rustic, Mulyo Pahat’s pieces are built to enrich
-        homes with warmth, character, and a distinctive design signature.
-      </p>
-      <a href="./page_about_us.html" class="mt-4 inline-block bg-[#3B2616] text-[#E6D7C3] px-6 py-2 rounded-full text-sm hover:bg-[#2e1d12]">
-        Learn More
-    </a>
+  <!-- About Us -->
+  <section class="bg-[url('./img/sand-texture.png')] bg-cover py-12">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8">
+      
+      <div class="px-0">
+        <h2 class="text-3xl font-lora text-[#3c2613] mb-4 font-medium">about us</h2>
+        <p class="text-[#3c2613] text-base leading-relaxed">
+          Mulyo Pahat has flourished with a singular mission: to create furniture that lasts.
+          We take pride in merging traditional craftsmanship with contemporary designs.
+          Our team consists of skilled artisans who carefully select quality wood and sustainably
+          source each material. From minimalist to rustic, Mulyo Pahat’s pieces are built to enrich
+          homes with warmth, character, and a distinctive design signature.
+        </p>
+        <a href="./page_about_us.html" class="mt-4 inline-block bg-[#3B2616] text-[#E6D7C3] px-6 py-2 rounded-full text-sm hover:bg-[#2e1d12]">
+          Learn More
+      </a>
+      </div>
+      
+      <div class="pr-6 lg:pr-12">
+        <img 
+              src="https://i.pinimg.com/736x/e0/e4/91/e0e4919139062f1995eb8aafa4ceaa0b.jpg" 
+              alt="About us image" 
+              class="rounded-xl h-[550px] w-[400px] object-cover shadow-md"
+          />
+      </div>
+      
     </div>
-    
-    <div class="pr-6 lg:pr-12">
-      <img 
-            src="https://i.pinimg.com/736x/e0/e4/91/e0e4919139062f1995eb8aafa4ceaa0b.jpg" 
-            alt="About us image" 
-            class="rounded-xl h-[550px] w-[400px] object-cover shadow-md"
-        />
-    </div>
-    
-  </div>
-</section>
+  </section>
 
 
 
